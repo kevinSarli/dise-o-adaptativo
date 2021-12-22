@@ -89,12 +89,11 @@
 
 /* header completado */
 
-#banner img{
-    display: none;
-    margin: auto;
+div.banner img{
     width: 100%;
-    height: 70px;
+    display: none;
 }
+
 
 /* main */
 
@@ -103,7 +102,7 @@
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-    width: 90%;
+    width: 100%;
 }
 
 .main-productos .main-sections .images {
@@ -182,8 +181,15 @@
 
 /* mobile completado */
 
-@media (min-width: 361px){
+@media (min-width: 425px){
 
+    article{
+        width: 100%;
+    }
+    div.banner img{
+        width: 100%;
+        display: block;
+    }
     .main-productos .producto b{
         display: inline-block;
         margin-top: 15px;
@@ -194,9 +200,7 @@
         margin: 15px 10px;; 
     }
 
-    #banner img{
-        display: block;
-    }
+    
 
     .container .burguer{
         display: none;
@@ -229,6 +233,3 @@
 
 }
 
-@media (min-width: 768px){
-
-}
